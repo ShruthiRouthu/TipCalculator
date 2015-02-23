@@ -21,11 +21,11 @@ public class Driver {
  
     public static void main(String[] args) {
         
-      TipCalculatorService myServcie = new TipCalculatorService();
+      TipCalculatorService myService = new TipCalculatorService();
       
-      TipStrategy myStrategy = new FoodServiceStrategy(ServiceQuality.GOOD,10); 
+      TipStrategy myStrategy = new BaggageServiceStrategy(ServiceQuality.FAIR, 5); 
       
-      System.out.println(myStrategy.getTip());
+      System.out.println(myService.getTip(myStrategy));
         
         
     }

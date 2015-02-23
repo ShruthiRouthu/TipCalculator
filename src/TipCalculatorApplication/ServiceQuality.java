@@ -1,14 +1,21 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package TipCalculatorApplication;
 
-/**
- *
- * @author Professional
- */
 public enum ServiceQuality {
-    GOOD, FAIR, POOR; 
+    GOOD(0.20), FAIR(0.15), POOR(0.10);
+     
+    private double percent;
+    
+    
+    ServiceQuality(double percent) {
+        this.percent = percent;
+    }
+
+    public double getPercent() {
+        return percent;
+    }
+
+    public void setPercent(double percent) {
+        this.percent = percent;
+    }
 }
